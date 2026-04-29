@@ -6,6 +6,6 @@ services:
     container_name: nagios
     ports:
       - "8085:80"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./msmtp/msmtprc:/etc/msmtprc:ro
     restart: unless-stopped

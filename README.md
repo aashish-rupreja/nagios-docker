@@ -24,6 +24,6 @@ cp .env.example .env
 
 ## Setting up SMTP credentials
  - docker exec -it nagios bash
- - echo "your_app_password" > /etc/msmtp_pass
+ - echo your_app_password > /etc/msmtp_pass
  - chmod 600 /etc/msmtp_pass
  - chown nagios:nagios /etc/msmtp_pass
